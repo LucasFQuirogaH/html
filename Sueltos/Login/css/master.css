@@ -1,0 +1,83 @@
+body{
+	margin: = 0;
+	padding: = 0;
+	background: url(../image/logo.jpg) no-repeat center top;
+	background-size: cover;
+	font-family: sans-serif;
+	height: 100vh;
+}
+
+.login-box{
+	width: 320px;
+	height: 420px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50% , -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+.login-box .avatar{ /*Si la clase esta definida en el http tenes que ponerle el .*/
+	width: 100px;
+	height: 100px;
+	border-radius: 50%; /*Aqui haces el avatar redondo*/
+	position: absolute;
+	top: -10%;
+	left: calc(50% - 50px);
+}
+
+.login-box h1{ /*Si no hay definicion de la clase no le pones punto*/
+	margin: = 0;
+	padding: =0 0 20px; /* Quita los espaciados*/
+	text-align: center;
+	font-size: 22px;
+}
+
+.login-box label{
+	margin: = 0;
+	padding: =0; /* Quita los espaciados*/
+	font-weight: bold;
+	text-align: center;
+	display: block; /* Para estar en una sola linea*/
+}
+
+.login-box input{
+	width: 100%;
+	margin-bottom: 20px;
+
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	text-align: center;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.login-box input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #b80f22;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.login-box a{
+	text-decoration: none; /*Quita la decoracion por defecto*/
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+}
+
+.login-box a:hover{
+	color: #0abc;
+}
