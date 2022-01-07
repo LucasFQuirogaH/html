@@ -1,0 +1,23 @@
+h1{
+    color: #f07167;
+}
+
+a:link{ /*Link por primera vez*/
+    color: #fb7167;
+    text-decoration: none; /*para que no subraye el link*/
+}
+
+a:visited{ /*Cuando ya hiciste un click en el link*/
+    color: #219ebc;
+    text-decoration: none; /*Para que no subraye el link*/
+}
+
+a:hover{ /*Cuando pasas el mouse por el link sin clickear*/
+    color: #8caea6;
+    text-decoration: underline; /*Para que si lo subraye*/
+}
+
+a:active{ /*Cuando has dado click pero no lo soltas*/
+    color: #023047;
+    text-decoration:  underline;
+}

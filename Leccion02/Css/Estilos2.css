@@ -1,0 +1,24 @@
+/*Cebolla desde adentro para afuera
+1. Content
+2. Padding
+3. Border
+4. Margin
+*/
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+p{
+    color: white;
+    background-color: crimson;
+    padding: 15px;
+    border: 10px solid powderblue;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-right: 4px;
+    margin-left: 8px;
+    /*margin 10px 13px 14px 15px Arriba derecha abajo izquierdo*/
+    /**margin 10px 40px 30px Arriba derecha-izquierda abajo se pueden especificar solo 3 valores/
+    /*margin: auto 50px para centrar horizontal completamente*/
+    text-align: center; /*Centrar el texto*/
+}
