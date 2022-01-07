@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benditos formularios</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <form action="mi_servidor" method="post" target="_self" autocomplete="off"> <!--Si pones novalidate ignora los required-->
+    <!--Aquie colocar el tipo post esconde el query string para que no visualise nada-->
+    <!--Target para que se cargue en la mmisma pc o en pagina nueva-->
+    <!--Autocomplete para que no autocomplete-->
+        <fieldset> <!--Le puso un recuadro a todo-->
+            <legend>Datos de la persona: </legend>
+            <!------------------------------------------------------------------------------------------------------>
+            <label for="nombre">Nombre: </label> <!--Aqui pones el for con el nombre del id-->
+            <input type="text" id="nombre" name="nombre" placeholder="Coloque nombre" required="true"/>
+            <br/><br/>
+            <!------------------------------------------------------------------------------------------------------>
+            <label for="apellido">Apellido: </label> <!--Aqui pones el for con el nombre del id-->
+            <input type="text" id="apellido" name="apellido" placeholder="coloque apellido"required="true"/> <!--Requerido para que complete si o si los campos-->
+            <br/><br/>
+            <!------------------------------------------------------------------------------------------------------>
+            <label for="edad">Edad: </label>
+            <input type="number" id="edad" name="edad" required="true"/> 
+            <br/><br/> <!--Excelente-->
+            <!------------------------------------------------------------------------------------------------------>
+            <label for="idPersona">Tipo: </label>
+            <input type="text" id="idPersona" name="idPersona" value="Ser Humano"readonly="true" disabled="true"/>  
+            <br/><br/> <!--Mandar un valor por defecto sin poder cambiar-->
+            <!--Si se deshabilita no se envia para el servidor-->
+            <!------------------------------------------------------------------------------------------------------>
+            <input type="hidden" id="sistema" name="sistema" value="SAP">
+            <!--Se va a enviar sin avisar nada-->
+            <!------------------------------------------------------------------------------------------------------>
+            <label>Genero: </label>
+            
+            <input type="radio" id="femenimo" name="genero" value="femenino" required="true"/>
+            <label for="femenino">Femenino </label>
+            
+            <input type="radio" id="masculino" name="genero" value="masculino" required="true">
+            <label for="masculino">Masculino</label>
+            <br/><br/>
+            <!------------------------------------------------------------------------------------------------------>
+            <label for="">Genero de musica favorita</label><br/><br/>
+            <input type="checkbox" id="Clasica" name="musica" value="clasica">
+            <label for="clasica">Clasica</label>
+            <br/>
+            <input type="checkbox" id="electronica" name="musica" value="electronica">
+            <label for="electronica">Electronica</label>
+            <br/>
+            <input type="checkbox" id="folcklore" name="musica" value="folcklore">
+            <label for="folcklore">Folcklore</label>
+            <br/>
+            <input type="checkbox" id="jazz" name="musica" value="jazz">
+            <label for="jazz">Jazz</label>
+            <br/>
+            <input type="checkbox" id="balada" name="musica" value="balada">
+            <label for="balada">Balada</label>
+            <br/><br/>
+            <!------------------------------------------------------------------------------------------------------>
+            <label for="autos">Marca de Auto Favorita: </label>
+            <Select id="autos" name="autos" multiple="false"> <!--Con la tecla control vos podes seleccionar mas de un item-->
+                <option value="volvo">Volvo</option>
+                <option value="ferrari">Ferrari</option>
+                <option value="bmw" selected="true">BMW</option><!--Si colocas selected para que aparezca primero-->
+            </Select> 
+            <br/><br/>
+            <!------------------------------------------------------------------------------------------------------>
+            <label for="comentario">Comentario</label>
+            <textarea name="comentario" id="comentario" cols="30" rows="2"></textarea>
+            <br/>
+            <!------------------------------------------------------------------------------------------------------>
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email" required="true"/> 
+            <br/><br/>
+            <!------------------------------------------------------------------------------------------------------>
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="pasword" required="true"/>
+            <br/><br/>
+            
+            <input type="submit" value="Enviar"/> <!--Podes colocar value="Quiroga" y carga a Quiroga listo para enviar en la caja-->
+            <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar"/> <!--Otro boton para enviar sin validar-->
+        </fieldset>
+    </form>
+</body>
+</html>

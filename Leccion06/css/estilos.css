@@ -1,0 +1,34 @@
+*{ /*Se aplica a todo el documento*/
+    margin: 0;
+    padding: 0;
+
+}
+
+h1{
+    color: #f72585;
+    text-align: center;
+    margin: 10px; /*Este puede sobreeescribir solo en los h1 el margin del asterisco*/
+}
+
+#Titulo_principal{ /*Es recomendable aplicar el id a un solo elemento*/
+    color: #a22ee6;
+    text-align: center;
+    margin: 10px; /*Este puede sobreeescribir solo en los h1 el margin del asterisco*/
+}
+
+h2{
+    color: #3f37c9;
+}
+p{
+    color: #457b9d
+}
+.tarjeta{ /*clase*/
+    border: 10px solid #560bad;
+    background-color: #f1faee;
+    text-align: center;
+    margin: 40px;
+    padding: 0 px;
+}
+.titulo{ /*Clase*/
+    color: #f72585
+}

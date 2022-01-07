@@ -1,0 +1,14 @@
+ol{
+    list-style: none;
+    counter-reset: contador; /*Aqui inicializas el contador*/
+}
+ol li{
+    counter-increment: contador; /*Aqui va incrementandose*/
+}
+ol li::before{  /*Aqui agregas texto antes de cada item */
+    content: 'Curso ' counter(contador) ' - ';
+    color: #ff6f00;
+}
+ol li::after{ /*Aqui texto despues*/
+    content: '.';
+}
